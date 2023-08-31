@@ -1,8 +1,17 @@
-idade = int(input('Qual seu ano de nascimento ? '))
-
-if idade > 18:
-    print('Ja se passaram {} anos da data de alistamento!'.format(idade - 18))
+from datetime import date
+atual = date.today().year
+nas = int(input('Ano de nascimento: '))
+idade = atual - nas
+print('Quem nasceu em {} tem {} anos em {}'.format(nas,idade,atual))
+if idade == 18:
+    print('Vce tem que se alisatr imediatamente')
 elif idade < 18:
-    print('Ainda falta {} anos pra voce poder se alistar!'.format(18 - idade))
-else:
-    print('Voce esta na idade exata do alistamento militar!')
+    saldo = 18 - idade
+    print('Ainda faltam {} anos para o alistamento'.format(saldo))
+    ano = saldo + atual
+    print('Seu alistamento é em {}'.format(ano))
+elif idade > 18:
+    saldo = idade - 18
+    print('Voce ja deveria ter se alistado há {} anos'.format(saldo))
+    ano = atual - saldo
+    print('Seu alistamento foi em {}'.format(saldo))

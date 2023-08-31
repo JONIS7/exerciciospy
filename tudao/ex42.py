@@ -1,12 +1,15 @@
-ano = int(input('Qual a seu ano de nascimento? '))
+from datetime import date
+ano = int(input('ano de nascimento? '))
+data_atual =
 idade = 2023 - ano
+print('O atleta tem {} anos '.format(idade))
 if idade <= 9:
-    print('Mirim')
+    print('Classificacao: Mirim')
 elif 10 <= idade <= 14:
-    print('Infantil')
+    print('Classificacao: Infantil')
 elif 15 <= idade <= 19:
-    print('junior')
+    print('Classificacao: junior')
 elif idade == 20:
-    print('Senior')
+    print('Classificacao: Senior')
 else:
-    print('Master')
+    print('Classificacao: Master')
