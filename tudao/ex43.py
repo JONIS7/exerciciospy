@@ -12,7 +12,7 @@ time.sleep(2)
 
 if (r1 + r2 > r3) and (r1 + r3 > r2) and (r2 + r3 > r1):
     print('-=-' * 20)
-    print('Essas retas podem formar um triangulo!')
+    print('Essas retas podem formar um triangulo!', end='')
     print('-=-' * 20)
 
     if r1 == r2 == r3:
