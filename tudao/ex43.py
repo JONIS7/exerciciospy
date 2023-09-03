@@ -12,15 +12,15 @@ time.sleep(2)
 
 if (r1 + r2 > r3) and (r1 + r3 > r2) and (r2 + r3 > r1):
     print('-=-' * 20)
-    print('Essas retas formam um triangulo!')
+    print('Essas retas podem formar um triangulo!')
     print('-=-' * 20)
 
     if r1 == r2 == r3:
-        print('É um triangulo equilatero')
+        print('equilatero')
     elif r3 == r2 or r2 == r1 or r1 == r3:
-        print('é um triangulo isosceles')
+        print('isosceles')
     else:
-        print('É um triangulo escaleno')
+        print('escaleno')
 
 else:
     print('-=-' * 20)
