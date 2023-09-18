@@ -5,4 +5,3 @@ c = primeiro
 while c <= decimo:
     print('{}'.format(c), end=' -> ')
     c += razao
-print('ACABOU')
